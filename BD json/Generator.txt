@@ -1,0 +1,29 @@
+Página para generarlo: http://www.json-generator.com/
+[
+  '{{repeat(6, 0)}}',
+  {
+    index: '{{index()}}',
+    calification: '{{floating(0, 5, 2, "0,0.00")}}',
+    picture: 'http://placehold.it/32x32',
+    cp: '{{integer(100, 99999)}}',
+    category: '{{random("Asistencia técnica Computacional", "Aires Acondicionados", "Plomería", "Electricista", "Carpintería", "Mosquiteros", "Inspector de billeteras", "Limpieza", "Lavado de autos", "Mudanzas", "Gasista")}}',
+    name: '{{firstName()}} {{surname()}}',
+    company: '{{company().toUpperCase()}}',
+    email: '{{email()}}',
+    phone: '+54 {{phone()}}',
+    city: '{{random("Córdoba", "Buenos Aires", "Chubut", "Misiones")}}',
+    about: '{{lorem(1, "paragraphs")}}',
+    registered: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss Z")}}',
+    reviews: [
+      '{{repeat(5)}}',	
+			{
+              "companydetail": '{{company().toUpperCase()}}',
+				"stars": '{{integer(0, 5)}}',
+				"body": '{{random("Una porquería lo detesto", "Que buen curso de Angular", "ola ke ace","jaja pa ke kieres saber eso saludos", "Recomiendo este animalito!", " Yokese no soy 100tifico", "Muy buena atencion lo recomiendo", "El trabajo muy bueno, pero la onda muy mala", "Demasiado bueno para ser real")}}',
+				"author": '{{email()}}'		
+			}
+      ]
+    
+    
+  }
+]
