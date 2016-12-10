@@ -2,7 +2,14 @@
 
 ## Built With
 
+* [AngularJS]
+* [Yeoman]
+* [Bootstrap]
+
 ## Authors
+
+* **Agustín Muñoz Campos** - [Agusteen](https://github.com/Agusteen)
+* **Nicolás Ramirez** - [NiicooR](https://github.com/NiicooR)
 
 ## Build & development
 
