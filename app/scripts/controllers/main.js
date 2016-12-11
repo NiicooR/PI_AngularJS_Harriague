@@ -13,33 +13,43 @@
  .constant('CategoriesBasePath', '../../BD/categories.json')
 .controller('MainCtrl', MainCtrl)
 
-  MainCtrl.$inject = ['MainInfoService'];
-  function MainCtrl(MainInfoService){
-  	var main = this;
+  MainCtrl.$inject = ['$scope','MainInfoService'];
+  function MainCtrl($scope,MainInfoService){
+  	$scope.main = this;
+    $scope.selectedCategory = null;
 
   	var promise = MainInfoService.getMainInfo();
 
 	promise.then(function(response){
-  		main.services = response.data;
+  		$scope.main.services = response.data;
   	})
   	.catch(function(error){
   		console.log("Something went terribly wrong, looking for services");
- 	});
+ 	})
 
   
-  	main.logCategories = function(){
-  		var promise = MainInfoService.getCategories();
+  	
+  var promise2 = MainInfoService.getCategories();
 
-    promise.then(function (response) {
-    	main.categories = response.data; 
+    promise2.then(function (response) {
+    	$scope.main.categories = response.data; 
       
     })
     .catch(function (error) {
       console.log("Something went terribly wrong, looking for categories");
     })
-  	}
-  	
 
+
+$scope.searchParams = {
+    company: '',
+    
+  };
+
+
+
+
+
+  
   }
 
 

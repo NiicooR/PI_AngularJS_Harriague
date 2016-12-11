@@ -1,18 +1,50 @@
 [
-      
-    
-      {"name":"Asistencia técnica Computacional"},
-      {"name":"Aires Acondicionados "},
-      {"name":"Plomería "},
-      {"name":"Electricista "},
-      {"name":"Carpintería "},
-      {"name":"Mosquiteros "},
-      {"name":"Inspector de billeteras "},
-      {"name":"Limpieza "},
-      {"name":"Lavado de autos "},
-      {"name":"Mudanzas "},
-      {"name":"Gasista "}
-      
-    
-  
+  {
+    "id": 0,
+    "name": "Mostrar todo"
+  },
+  {
+    "id": 1,
+    "name": "Asistencia técnica Computacional"
+  },
+  {
+    "id": 2,
+    "name": "Aires Acondicionados"
+  },
+  {
+    "id": 3,
+    "name":" Plomería"
+  },
+  {
+    "id": 4,
+    "name": "Electricista"
+  },
+  {
+    "id": 5,
+    "name": "Carpintería"
+  },
+  {
+    "id": 6,
+    "name": "Mosquiteros"
+  },
+  {
+    "id": 7,
+    "name": "Inspector de billeteras"
+  },
+  {
+    "id": 8,
+    "name": "Limpieza"
+  },
+  {
+    "id": 9,
+    "name": "Lavado de autos"
+  },
+  {
+    "id": 10,
+    "name": "Mudanzas"
+  },
+  {
+    "id": 11,
+    "name": "Gasista"
+  }
 ]
