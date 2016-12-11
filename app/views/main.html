@@ -29,6 +29,7 @@
 </div>-->
 
 <div class="row">
+<<<<<<< HEAD
   <div ng-repeat="services in main.services | orderBy:'calification':true | filter:search">
     <div class="col-lg-6">
       <div class="panel panel-default">
@@ -42,6 +43,20 @@
           Comentarios: {{ services.reviews.length }}
         </div>
       </div>
+=======
+  <div ng-repeat="services in main.services | orderBy:'calification':true | filter:searchParams| filter: {category: selectedCategory.name}" >
+    <div class="clearfix" ng-if="$index % 2 == 0"></div>
+    <div class="panel-body col-lg-6 ">
+      Datos del servicio
+      {{ services.city }} 
+      {{ services.company }} 
+      {{ services.category }} 
+      {{ services.calification }} 
+      Comentarios: {{ services.reviews.length }} 
+      
+
+
+>>>>>>> 14f2f188ca82e7e0e7be7504a94155aef9476b8d
     </div>
   </div>
 </div>
@@ -52,9 +67,15 @@
 
 <!-- NO ORDENA de a 2
 <div class= "row">
+<<<<<<< HEAD
   <div class="col-lg-6" ng-repeat="services in main.services| orderBy:'calification':true | filter:searchParams">
     <!-- acá va  el filtro tambien 
     <div class="panel panel-default marketing">
+=======
+  <div class="col-lg-6" >
+    <!-- acá va  el filtro tambien -->
+    <div class="panel panel-default marketing" ng-repeat="services in main.services| orderBy:'calification':true | filter:searchParams | filter: {category: selectedCategory.name}">
+>>>>>>> 14f2f188ca82e7e0e7be7504a94155aef9476b8d
       <div class="panel-body">
         Datos del servicio
         {{ services.city }} 
