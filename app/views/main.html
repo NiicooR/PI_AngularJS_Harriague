@@ -45,7 +45,7 @@
 <!--Esto debe ir en un ng-repeat de todos los servicios-->
 <!-- NO muestra panels -->
 <div class="row">
-  <div ng-repeat="services in main.services | orderBy:'calification':true | filter:searchParams">
+  <div ng-repeat="services in main.services | orderBy:'calification':true | filter:searchParams| filter: {category: selectedCategory.name}" >
     <div class="clearfix" ng-if="$index % 2 == 0"></div>
     <div class="panel-body col-lg-6 ">
       Datos del servicio
@@ -69,7 +69,7 @@
 <div class= "row">
   <div class="col-lg-6" >
     <!-- acá va  el filtro tambien -->
-    <div class="panel panel-default marketing" ng-repeat="services in main.services| orderBy:'calification':true | filter:searchParams">
+    <div class="panel panel-default marketing" ng-repeat="services in main.services| orderBy:'calification':true | filter:searchParams | filter: {category: selectedCategory.name}">
       <div class="panel-body">
         Datos del servicio
         {{ services.city }} 
