@@ -21,6 +21,15 @@ body {
   margin-bottom: 5%;
 }
 
+.imgPane{
+  width: auto;
+  height: 130px;
+}
+
+.a{
+
+}
+
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
