@@ -2,15 +2,15 @@
   <div class="input-group input-group-lg">
     <div class="input-group-btn">
       <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="category">Categoria <span class="caret"></span> </button>
-      <!-- Agregar un ng-repeat de categorias
+      <!-- Agregar un ng-repeat de categorias -->
         <ul class="dropdown-menu">        
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
+          <li ng-repeat = "category in main.categories"><a href="#">{{category.name}}</a></li>
+        <!--  <li><a href="#">Another action</a></li>
           <li><a href="#">Something else here</a></li>
           <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
+          <li><a href="#">Separated link</a></li> -->
         </ul>
-      -->
+      
     </div>
     <input type="text" class="form-control" aria-label="...">
     <span class="input-group-btn">
@@ -20,12 +20,45 @@
 </div>
 
 <!--Esto debe ir en un ng-repeat de todos los servicios-->
-<div class=" col-lg-6">
-  <div class="panel panel-default marketing">
+<!-- NO muestra panels -->
+<div class="row">
+    <div ng-repeat="services in main.services">
+        <div class="clearfix" ng-if="$index % 2 == 0"></div>
+        <div class="panel-body col-lg-6 ">
+      Datos del servicio
+      {{ services.city }} 
+      {{ services.company }} 
+      {{ services.category }} 
+      {{ services.calification }} 
+      Comentarios: {{ services.reviews.length }} 
+      
+       
+
+    </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- NO ORDENA de a 2 -->
+<div class= "row">
+<div class="col-lg-6" >
+  <div class="panel panel-default marketing" ng-repeat="services in main.services">
     <div class="panel-body">
       Datos del servicio
+      {{ services.city }} 
+      {{ services.company }} 
+      {{ services.category }} 
+      {{ services.calification }} 
+      Comentarios: {{ services.reviews.length }} 
+      
+       
+
     </div>
   </div>
+</div>
 </div>
 
 
