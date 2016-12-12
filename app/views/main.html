@@ -15,8 +15,8 @@
   <div ng-repeat="services in main.services | orderBy:'calification':true | filter:search | filter:searchParams| filter: {category: selectedCategory.name}"">
     <div class="col-lg-6">
     
-      <div class="panel panel-default">
-        <div class="clearfix" ng-if="$index % 2 == 0"></div>
+      <div class="panel panel-default ">
+        <div class="clearfix servicehover" ng-if="$index % 2 == 0"></div>
         <div class="panel-body">                 
           <h3>{{ services.name }}<small> {{ services.category }}</small></h3>
           <hr>
