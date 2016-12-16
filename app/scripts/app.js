@@ -32,9 +32,7 @@ angular
       .when('/servicedetail', {
         templateUrl: 'views/servicedetail.html',
         controller: 'ServicedetailCtrl',
-        controllerAs: 'servicedetail',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        controllerAs: 'servicedetail',        
       })
       .otherwise({
         redirectTo: '/'
