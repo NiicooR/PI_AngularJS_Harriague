@@ -8,10 +8,8 @@
  * Controller of the freeReviewsApp
  */
 angular.module('freeReviewsApp')
-  .controller('ServicedetailCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('ServicedetailCtrl', function ($routeParams) {
+  	console.log('ID: ' + $routeParams.serviceId); 	  	
+
+    
   });

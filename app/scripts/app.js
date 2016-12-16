@@ -29,10 +29,10 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/servicedetail', {
+      .when('/servicedetail/:serviceId', {
         templateUrl: 'views/servicedetail.html',
         controller: 'ServicedetailCtrl',
-        controllerAs: 'servicedetail',        
+        controllerAs: 'servicedetail',      
       })
       .otherwise({
         redirectTo: '/'

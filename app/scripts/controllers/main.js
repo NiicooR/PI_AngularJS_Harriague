@@ -44,11 +44,6 @@ $scope.searchParams = {
     company: '',
     
   };
-
-
-
-
-
   
   }
 
@@ -77,19 +72,3 @@ function MainInfoService($http, BDBasePath, CategoriesBasePath ){
 
 
   };
-
-
-
-
-
-
-
-
-
-//.controller('MainCtrl', function () {
-// 	this.awesomeThings = [
-//	'HTML5 Boilerplate',
-// 	'AngularJS',
-//	'Karma'
-// 	];
-// });
