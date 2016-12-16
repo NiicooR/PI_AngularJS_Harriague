@@ -1,3 +1,4 @@
+
 <div class="row">
 	<h2>Titulo Servicio <small>Categoria</small></h2>
 	<hr>
@@ -15,20 +16,63 @@
 <div class="row">
 	<h2>Calificación <small>en promedio</small></h2>
 	<hr>
-		<h1 class="text-center">5.0</h1>		
+	<h1 class="text-center">5.0</h1>		
 </div>
 
 <div class="row">
 	<h2>Reviews <small>de usuarios</small></h2>
 	<hr>
+	<div class="panel panel-default">
+		<div class="panel-body">
+
+
+			<div class="form-group">
+				<textarea class="form-control" ng-model="body" rows="5" placeholder="Escribe tu opinion del servicio aqui..."></textarea><br>				
+				<form class="form-inline">
+					<div class="col-md-10">
+						<div class="form-group">
+							<label class="sr-only" for="name">Nombre</label>
+							<input type="text" ng-model="name" class="form-control" id="name" placeholder="Nombre">
+						</div>
+						<select class="form-control" ng-options="stars for stars in [1, 2, 3, 4, 5]" ng-model="calification">
+							<option value="" disabled selected>Calificación</option>
+							
+						</select>
+					</div>
+					<div class="col-md-2 text-right">					
+						<button type="submit" class="btn btn-primary">Publicar</button>					
+					</div>
+				</form>
+			</div>
+
+			<div ng-if="body">
+				<br>
+				<hr>
+				<h4>Previsualización de tu review</h4>
+				<blockquote>
+
+					<div class="col-md-10">
+						<p>{{body}}</p>
+					</div>	
+					<div class="col-md-2">
+						<p>{{calification | number: 1}}</p>
+					</div>	
+
+					<footer>{{name}}</footer>
+				</blockquote>	
+			</div>
+		</div>
+	</div>
+
 	<blockquote>
-			<div class="col-md-10">
-				<p>Body de la review aqui</p>
-			</div>	
-			<div class="col-md-2">
-				<p>5.0</p>
-			</div>	
+		<div class="col-md-10">
+			<p>Body de la review aqui</p>
+		</div>	
+		<div class="col-md-2">
+			<p>5.0</p>
+		</div>	
 		
 		<footer>Nombre de la persona</footer>
-	</blockquote>		
+	</blockquote>	
+
 </div>
