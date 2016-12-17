@@ -1,22 +1,22 @@
 
 <div class="row">
-	<h2>Titulo Servicio <small>Categoria</small></h2>
+	<h2>{{services.name}} <small>{{services.category}}</small></h2>
 	<hr>
 	<div class="col-md-6">
-		<h1>IMAGEN AQUI</h1>
+		<img ng-src="{{services.picture}}" class="img-rounded imgDetail"/>
 	</div>
 	<div class="col-md-6">
-		<p class="lead">Propietario: </p>
-		<p class="lead">Ciudad: </p>
-		<p class="lead">Correo: </p>
-		<p class="lead">Teléfono: </p>	
+		<p class="lead">Empresa: {{services.company}}</p>
+		<p class="lead">Ciudad: {{services.city}}</p>
+		<p class="lead">Correo: {{services.email}}</p>
+		<p class="lead">Teléfono: {{services.phone}}</p>	
 	</div>	
 </div>
 
 <div class="row">
 	<h2>Calificación <small>en promedio</small></h2>
 	<hr>
-	<h1 class="text-center">5.0</h1>		
+	<h1 class="text-center calification"><strong>{{services.calification | number: 1}}</strong></h1>		
 </div>
 
 <div class="row">
@@ -35,8 +35,7 @@
 							<input type="text" ng-model="name" class="form-control" id="name" placeholder="Nombre">
 						</div>
 						<select class="form-control" ng-options="stars for stars in [1, 2, 3, 4, 5]" ng-model="calification">
-							<option value="" disabled selected>Calificación</option>
-							
+							<option value="" disabled selected>Calificación</option>						
 						</select>
 					</div>
 					<div class="col-md-2 text-right">					
@@ -63,16 +62,16 @@
 			</div>
 		</div>
 	</div>
-
+<div ng-repeat="review in services.reviews">
 	<blockquote>
 		<div class="col-md-10">
-			<p>Body de la review aqui</p>
+			<p>{{review.body}}</p>
 		</div>	
 		<div class="col-md-2">
-			<p>5.0</p>
+			<p>{{review.stars | number: 1}}</p>
 		</div>	
 		
-		<footer>Nombre de la persona</footer>
+		<footer>{{review.author}}</footer>
 	</blockquote>	
-
+</div>
 </div>

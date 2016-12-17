@@ -8,8 +8,18 @@
  * Controller of the freeReviewsApp
  */
 angular.module('freeReviewsApp')
-  .controller('ServicedetailCtrl', function ($routeParams) {
-  	console.log('ID: ' + $routeParams.serviceId); 	  	
+  .controller('ServicedetailCtrl', function ($routeParams, getService, $scope) {
+  	//console.log('ID: ' + $routeParams.serviceId); 
+  	
+  	var promise = getService.getMainInfo($routeParams.serviceId);
+  	
+  	promise.then(function(response){  		
+  		$scope.services = response;
+      
+  	})
+  	.catch(function(error){
+  		console.log("Something went terribly wrong, looking for services");
+ 	})
 
     
   });

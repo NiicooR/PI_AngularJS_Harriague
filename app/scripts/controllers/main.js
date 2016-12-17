@@ -20,8 +20,10 @@
 
   	var promise = MainInfoService.getMainInfo();
 
+
 	promise.then(function(response){
   		$scope.main.services = response.data;
+      
   	})
   	.catch(function(error){
   		console.log("Something went terribly wrong, looking for services");

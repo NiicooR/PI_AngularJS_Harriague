@@ -25,6 +25,14 @@ body {
   width: auto;
   height: 130px;
 }
+.imgDetail{
+  width: auto;
+  height: 200px;
+  margin-bottom: 50px;
+}
+.calification{
+  font-size: 6em;
+}
 
 .a{
 
