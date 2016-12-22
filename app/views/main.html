@@ -1,6 +1,7 @@
 <div class="row barra" >
   <div class="input-group input-group-lg">
-    <select class="form-control" ng-model ="selectedCategory" ng-options= "category.name for category in main.categories">     
+    <select class="form-control" ng-model ="selectedCategory" ng-options= "category.name for category in main.categories">
+    <option value="" selected>Todos</option>     
       <option>{{category.id}}</option>  
     </select>    
     <span class="input-group-addon" style="width:0px; padding-left:0px; padding-right:0px; border:none;"></span>
