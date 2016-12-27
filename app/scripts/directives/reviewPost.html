@@ -1,38 +1,40 @@
-	<div class="panel panel-default">
-		<div class="panel-body">		
-			<div class="form-group">
-				<textarea class="form-control limit" ng-model="body" rows="5" placeholder="Escribe tu opinion del servicio aqui..."></textarea><br>				
-				<form class="form-inline">
-					<div class="col-md-10">
-						<div class="form-group">
-							<label class="sr-only" for="name">Nombre</label>
-							<input type="text" ng-model="name" class="form-control" id="name" placeholder="Nombre">
-						</div>
-						<select class="form-control" ng-options="stars for stars in [1, 2, 3, 4, 5]" ng-model="calification">
-							<option value="" disabled selected>Calificación</option>				
-						</select>
+<div class="panel panel-default">
+	<div class="panel-body">
+
+		<form name="reviewForm" class="form-group css-form" novalidate>
+
+			<textarea class="form-control limit" ng-model="review.body" rows="5" placeholder="Escribe tu opinion del servicio aqui..." ng-required="true"></textarea><br>	
+
+			<div class="form-inline">
+				<div class="col-md-10">
+					<div class="form-group">						
+						<input type="text" ng-model="review.author" class="form-control" id="name" placeholder="Autor" required>
 					</div>
-					<div class="col-md-2 text-right">					
-						<button type="submit" class="btn btn-primary">Publicar</button>				
-					</div>
-				</form>
+					<select class="form-control" ng-options="stars for stars in [1, 2, 3, 4, 5]" ng-model="review.stars" required>
+						<option value="" disabled selected>Calificación</option>				
+					</select>
+				</div>
+				<div class="col-md-2 text-right">					
+				<input type="submit" class="btn btn-primary" value="Publicar" ng-disabled="reviewForm.$invalid" ng-click="publish()"></input>		
+				</div>
 			</div>
+		</form>
 
-			<div ng-if="body">
-				<br>
-				<hr>
-				<h4>Previsualización de tu review</h4>
-				<blockquote>
+		<div ng-if="review.body">
+			<br>
+			<hr>
+			<h4>Previsualización de tu review</h4>
+			<blockquote>
 
-					<div class="col-md-10">
-						<p>{{body}}</p>
-					</div>	
-					<div class="col-md-2">
-						<p>{{calification | number: 1}}</p>
-					</div>	
+				<div class="col-md-10">
+					<p>{{review.body}}</p>
+				</div>	
+				<div class="col-md-2">
+					<p>{{review.stars | number: 1}}</p>
+				</div>	
 
-					<footer>{{name}}</footer>
-				</blockquote>	
-			</div>
+				<footer>{{review.author}}</footer>
+			</blockquote>	
 		</div>
 	</div>
+</div>

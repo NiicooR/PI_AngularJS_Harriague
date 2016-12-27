@@ -21,5 +21,12 @@
   		console.log("Something went terribly wrong, looking for services");
     })
 
-    
+    $scope.publish = function() {      
+      $scope.services.reviews.push($scope.review);     
+
+      getService.postReview($scope.review);
+      $scope.review = '';
+
+    }
+
   });

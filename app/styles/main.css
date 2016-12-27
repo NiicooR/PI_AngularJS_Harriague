@@ -23,7 +23,7 @@ body {
 
 .imgPane{
   width: auto;
-  height: 130px;
+  height: 150px;
 }
 .imgDetail{
   width: auto;
@@ -43,6 +43,12 @@ body {
 .emoji{
   width: 50px;
   height: auto;
+}
+.css-form input.ng-invalid.ng-dirty, textarea.ng-invalid.ng-dirty, select.ng-invalid.ng-dirty{
+  border-color: red;
+}
+.css-form input.ng-valid.ng-dirty, textarea.ng-valid.ng-dirty, select.ng-valid.ng-dirty{
+  border-color: blue;
 }
 
 /* Custom page header */
@@ -91,7 +97,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 800px;
+    max-width: 1000px;
   }
 
   /* Remove the padding we set earlier */
