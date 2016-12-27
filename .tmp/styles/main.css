@@ -50,11 +50,33 @@ body {
 .css-form input.ng-valid.ng-dirty, textarea.ng-valid.ng-dirty, select.ng-valid.ng-dirty{
   border-color: blue;
 }
+.logoHome{
+  width: 200px;
+  margin-top: -5px;  
+  height: auto;  
+}
+.logoAbout{
+  width: 600px;  
+  height: auto;
+}
+.block a{
+  text-decoration: none;
+  color:#333;
+}
+.panel-default:hover{
+  box-shadow: 0px 0px 19px 6px rgba(0,0,0,0.43);
+  
+}
+.star{
+  margin-top: -10px;
+  width: 50px;
+  height: auto;
+}
 
 /* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
+.header {  
   margin-bottom: 10px;
+  margin-top: 90px;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -115,4 +137,12 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+
+}
+@media screen and (max-width: 767px) {  
+  .logoHome{
+  width: 150px;
+  margin-top: -5px;  
+  height: auto;  
+}
 }

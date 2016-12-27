@@ -2,17 +2,18 @@
 
 <div class="row">
   <div ng-repeat="services in main.services | orderBy:'calification':true | filter:search | filter:searchParams| filter: {category: selectedCategory.name}"">
-    <div class="col-lg-6">
-    
-      <div class="panel panel-default ">
-        <div class="clearfix servicehover" ng-if="$index % 2 == 0"></div>
+    <div class="col-lg-6 block">
+    <a ng-href="#/servicedetail/{{services.index}}">
+      <div class="panel panel-default ">        
+        <a ng-href="#/servicedetail/{{services.index}}">
         <div class="panel-body">                 
           <h3>{{ services.name }}<small> {{ services.category }}</small></h3>
           <hr>
           <div class="text-center">
             <img ng-src="{{services.picture}}" class="img-rounded imgPane"/>
           </div>
-          <h1 class="text-right"><strong>{{ services.calification | number: 1}}</strong></h1>
+          
+          <h1 class="text-right"><strong>{{ services.calification | number: 1}}</strong><img class="star" ng-src="../images/star.png"></h1>
           <hr>          
           <p>Empresa: {{ services.company }}</p>                     
           <p>Ciudad: {{ services.city }}</p>
@@ -20,7 +21,7 @@
           <a ng-href="#/servicedetail/{{services.index}}"><h5 class="text-center">{{ services.reviews.length }} reviews</h5></a>
         </div>
       </div>
-      
+      </a>
     </div>
   </div>
 </div>

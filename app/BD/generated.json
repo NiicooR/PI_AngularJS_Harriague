@@ -30,18 +30,6 @@
         "stars": 5,
         "body": "El trabajo muy bueno, pero la onda muy mala",
         "author": "farleymiller@sportan.com"
-      },
-      {
-        "companydetail": "SINGAVERA",
-        "stars": 3,
-        "body": "Una porquería lo detesto",
-        "author": "farleymiller@singavera.com"
-      },
-      {
-        "companydetail": "ENTOGROK",
-        "stars": 3,
-        "body": "El trabajo muy bueno, pero la onda muy mala",
-        "author": "farleymiller@entogrok.com"
       }
     ]
   },
@@ -88,6 +76,18 @@
         "stars": 5,
         "body": "Muy buena atencion lo recomiendo",
         "author": "glassalford@comtest.com"
+      },
+      {
+        "companydetail": "SINGAVERA",
+        "stars": 3,
+        "body": "Una porquería lo detesto",
+        "author": "farleymiller@singavera.com"
+      },
+      {
+        "companydetail": "ENTOGROK",
+        "stars": 3,
+        "body": "El trabajo muy bueno, pero la onda muy mala",
+        "author": "farleymiller@entogrok.com"
       }
     ]
   },
@@ -116,13 +116,7 @@
         "stars": 1,
         "body": "ola ke ace",
         "author": "lambertcasey@diginetic.com"
-      },
-      {
-        "companydetail": "ACRUEX",
-        "stars": 1,
-        "body": "Una porquería lo detesto",
-        "author": "lambertcasey@acruex.com"
-      },
+      },      
       {
         "companydetail": "ZOLARITY",
         "stars": 1,
@@ -180,6 +174,12 @@
         "stars": 3,
         "body": "jaja pa ke kieres saber eso saludos",
         "author": "websterdowns@acusage.com"
+      },
+      {
+        "companydetail": "ACRUEX",
+        "stars": 1,
+        "body": "Una porquería lo detesto",
+        "author": "lambertcasey@acruex.com"
       }
     ]
   },
@@ -197,24 +197,6 @@
     "about": "Nostrud culpa aliqua est labore id officia laborum sunt pariatur minim qui. Cupidatat eu proident quis laboris amet dolor culpa id nostrud nulla mollit. Duis enim mollit incididunt mollit irure qui deserunt. Velit cupidatat reprehenderit amet minim et dolor reprehenderit nostrud sit proident magna. Aliqua consequat sint nostrud sunt elit. Ipsum officia do proident ex nostrud officia eu amet consectetur laborum ut laborum incididunt occaecat.\r\n",
     "registered": "2016-05-20T12:29:22 +03:00",
     "reviews": [
-      {
-        "companydetail": "FLUMBO",
-        "stars": 2,
-        "body": "El trabajo muy bueno, pero la onda muy mala",
-        "author": "rosannaford@flumbo.com"
-      },
-      {
-        "companydetail": "CUBICIDE",
-        "stars": 2,
-        "body": "El trabajo muy bueno, pero la onda muy mala",
-        "author": "rosannaford@cubicide.com"
-      },
-      {
-        "companydetail": "DOGTOWN",
-        "stars": 0,
-        "body": "Recomiendo este animalito!",
-        "author": "rosannaford@dogtown.com"
-      },
       {
         "companydetail": "POLARIA",
         "stars": 3,
@@ -272,6 +254,24 @@
         "stars": 5,
         "body": " Yokese no soy 100tifico",
         "author": "willisrivas@anarco.com"
+      },
+      {
+        "companydetail": "FLUMBO",
+        "stars": 2,
+        "body": "El trabajo muy bueno, pero la onda muy mala",
+        "author": "rosannaford@flumbo.com"
+      },
+      {
+        "companydetail": "CUBICIDE",
+        "stars": 2,
+        "body": "El trabajo muy bueno, pero la onda muy mala",
+        "author": "rosannaford@cubicide.com"
+      },
+      {
+        "companydetail": "DOGTOWN",
+        "stars": 0,
+        "body": "Recomiendo este animalito!",
+        "author": "rosannaford@dogtown.com"
       }
     ]
   }
