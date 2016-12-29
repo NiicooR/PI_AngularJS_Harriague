@@ -13,14 +13,13 @@
 			<div class="row">
 				<div class="col-md-10">
 					<p>{{review.body}}</p>
-				</div>	
-				<div class="col-md-1">
-					<p>{{review.stars | number: 1}}</p>
+				</div>				
+				<div class="col-sm-1 text-right">			
+					<h3>{{review.stars | number: 1}}</h3>
 				</div>
-				<div class="col-md-1">
+				<div class="col-sm-1 text-right">
 					<emojis></emojis>				
-				</div>
-				
+				</div>				
 				<footer>{{review.author}}</footer>
 			</div>
 		</blockquote>	
